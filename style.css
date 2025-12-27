@@ -1,0 +1,260 @@
+ /* COMMON */
+.blur-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/collage_pic_me_and_nandita.jpeg") no-repeat center center;
+    filter: blur(8px);
+    opacity: 0.35;
+    z-index: -2;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+/* PAGE 1 */
+.page1 {
+    background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: #b30059;
+    margin-top: 20px;
+}
+
+.subtitle {
+    color: #800040;
+    margin-bottom: 30px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.photo-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #ff4d88;
+    box-shadow: 0 0 15px rgba(255, 0, 100, 0.5);
+}
+
+.next-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 25px;
+    background-color: #ff4d88;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+/* PAGE 2 */
+.page2 {
+    background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.heart {
+    font-size: 60px;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.love-text {
+    font-size: 20px;
+    color: #4b004b;
+    margin-top: 30px;
+}
+
+.final-text {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #660033;
+    font-weight: bold;
+}
+
+.hearts {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: red;
+    transform: rotate(45deg);
+    animation: float 6s infinite ease-in;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -8px;
+    left: 0;
+}
+
+.heart::after {
+    left: -8px;
+    top: 0;
+}
+
+@keyframes float {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: -10%;
+        opacity: 0;
+    }
+}
+
+.video-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.video-box video {
+    width: 320px;
+    border-radius: 25px;
+    border: 5px solid #ff4d6d;
+    box-shadow: 0 0 25px rgba(255, 77, 109, 0.8);
+}
+
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  bottom: -20px;
+  width: 15px;
+  height: 15px;
+  background: red;
+  transform: rotate(45deg);
+  animation: floatUp linear infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -7px;
+  left: 0;
+}
+
+.heart::after {
+  left: -7px;
+  top: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Romantic blurred background */
+.blur-bg-page2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/romantic_bg.jpg") center/cover no-repeat;
+  filter: blur(8px);
+  opacity: 0.35;
+  z-index: -2;
+}
+
+
+/* Page 2 Video Styling */
+.page2-video {
+  width: 90%;
+  max-width: 360px;      /* perfect for Android screens */
+  margin: 25px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(255, 0, 80, 0.5);
+}
+
+.page2-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+}
+
+.love-text {
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

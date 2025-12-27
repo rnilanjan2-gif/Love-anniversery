@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page2">
+    
+    
+    <div class="blur-bg-page2"></div>
+
+
+
+    <div class="hearts"></div>
+
+
+    <div class="heart">❤️</div>
+
+    <h1>For You, Always 💕</h1>
+
+    <p class="love-text">
+        Distance may keep us apart,<br>
+        but my heart beats only for you.<br><br>
+
+        Every day, every night,<br>
+        I choose you — again and again ❤️
+    </p>
+
+    <p class="final-text">
+        Happy Love Anniversary 🌹<br>
+        Forever Yours 💫
+    </p>
+    
+    <p class="love-text">
+        From the first smile to every heartbeat 💞<br>
+        Every moment with you is my favorite memory.<br>
+        I promise to love you — today, tomorrow, always 🤍
+    </p>
+
+    <div class="video-box page2-video">
+    <video controls playsinline>
+       <source src="videos/love2.mp4" type="video/mp4">
+    Your browser does not support video.
+    </video>
+    </div>
+
+    
+    <script>
+        for (let i = 0; i < 30; i++) {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (3 + Math.random() * 5) + "s";
+        document.querySelector(".hearts").appendChild(heart);
+        }
+    </script>
+  
+
+</body>
+</html>
